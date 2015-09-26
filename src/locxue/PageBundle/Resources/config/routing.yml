@@ -1,3 +1,15 @@
 locxue_page_homepage:
-    path:     /hello/{name}
+    path:     /
     defaults: { _controller: locxuePageBundle:Default:index }
+
+locxue_page_eventos:
+    path:     /eventos
+    defaults: { _controller: locxuePageBundle:Eventos:index }
+
+locxue_page_nosotros:
+    path:     /nosotros
+    defaults: { _controller: locxuePageBundle:Nosotros:index }
+
+locxue_page_historia:
+    path:     /historia
+    defaults: { _controller: locxuePageBundle:Nosotros:historia }

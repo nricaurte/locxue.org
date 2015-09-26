@@ -1,0 +1,48 @@
+{% extends '::base.html.twig' %}
+{% block body %}
+<br>
+<div class="centar">
+	<h3>Enventos Agiles Colombia</h3>
+	<div class="row">
+		<div class="col s2 l3"><p></p></div>
+		<div id="iframe" class="col l6">
+
+		</div>
+	</div>
+	
+
+
+	<script >
+
+
+		$.ajax({
+			url: "http://api.meetup.com/2/events?key=1415340124346653495e741d3b26e&group_urlname=AgilesColombia&sign=true",
+			jsonp: "callback",
+			dataType: "jsonp",
+			data: {
+		    	
+		    },
+		    success: function( response ) {
+		    	var html = '<div class="row">';
+		    	for (var i = 0 ; i < response.results.length; i++) {
+		    		html = html + '<div class="row">'
+							        +'<div class="col s12 m8 l12">'
+							          +'<div class="card blue-grey darken-1">'
+							            +'<div class="card-content white-text">'
+							            +'<span class="card-title">'+response.results[i].name+'</span>'
+							            +response.results[i].description+'</div>'
+							            +'<div class="card-action">'
+							              +'<a href="'+response.results[i].event_url+'">Mas informacion</a>'
+							            +'</div>'
+							          +'</div>'
+							        +'</div>'
+							      +'</div>';
+		    	};
+
+		    	$("#iframe").html(html);
+		        console.log( response ); // server response
+		    }
+		});
+	</script>
+	
+	{% endblock %}

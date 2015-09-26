@@ -1,0 +1,38 @@
+.social-f .responsive-img{
+
+height: 3rem;
+width: 3rem;
+}
+
+blockquote{
+	 border-left: 0px ; 
+}
+
+.justifyText{
+text-align : justify;
+}
+
+.divider{
+	  background-color:  #2196f3; 
+}
+.btn-s{
+    display: inline-block;
+    padding: 10px 10px;
+    background: red;
+    text-decoration: none;
+    font-size: 20px;
+
+    background-color: white;
+
+}
+.btn-s .icon-facebook{color:#3b5998;
+}
+.btn-s .icon-twitter{color:#00abf0;
+}
+.btn-s .icon-googleplus{color:#d95232;
+}
+.btn-s .icon-youtube{color:#cd201f;
+}
+.btn-s .icon-linkedin{color:#313335;
+}
+

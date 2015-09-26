@@ -4,10 +4,10 @@ namespace locxue\PageBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 
-class DefaultController extends Controller
+class EventosController extends Controller
 {
     public function indexAction()
     {
-        return $this->render('locxuePageBundle:Default:index.html.twig');
+        return $this->render('locxuePageBundle:Eventos:index.html.twig');
     }
 }
