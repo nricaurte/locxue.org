@@ -1,0 +1,7 @@
+locxue_page:
+    resource: "@locxuePageBundle/Resources/config/routing.yml"
+    prefix:   /
+
+app:
+    resource: "@AppBundle/Controller/"
+    type:     annotation

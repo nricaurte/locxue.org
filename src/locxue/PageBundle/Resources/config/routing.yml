@@ -1,0 +1,3 @@
+locxue_page_homepage:
+    path:     /hello/{name}
+    defaults: { _controller: locxuePageBundle:Default:index }
