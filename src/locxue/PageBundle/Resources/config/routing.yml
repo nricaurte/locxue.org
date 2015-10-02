@@ -13,3 +13,7 @@ locxue_page_nosotros:
 locxue_page_historia:
     path:     /historia
     defaults: { _controller: locxuePageBundle:Nosotros:historia }
+
+locxue_page_donar:
+    path:     /donar
+    defaults: { _controller: locxuePageBundle:Donar:index }
