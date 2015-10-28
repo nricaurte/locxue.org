@@ -5843,6 +5843,7 @@ small {
   z-index: 1;
   width: 37px;
   height: 37px;
+  left: 20;
   line-height: 37px;
   padding: 0;
   background-color: #26a69a;
@@ -7008,11 +7009,11 @@ select {
   .table-of-contents a:hover {
     color: #a8a8a8;
     padding-left: 19px;
-    border-left: 1px solid #ea4a4f; }
+    border-left: 1px solid #2196f3; }
   .table-of-contents a.active {
     font-weight: 500;
     padding-left: 18px;
-    border-left: 2px solid #ea4a4f; }
+    border-left: 2px solid #2196f3; }
 
 .side-nav {
   position: fixed;
