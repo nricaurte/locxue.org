@@ -34,14 +34,14 @@
 				  <ul id="nav-mobile" class="right hide-on-med-and-down">
 					<li><a class="texto-nav white-text flow-text" href="{{ path('locxue_page_eventos') }}">Eventos</a></li>
 					<li><a class="texto-nav white-text flow-text" href="#">Historia</a></li>
-					<li><a class="texto-nav white-text flow-text" href="#">Donar</a></li>
+					
 				  </ul>
 				  <ul class="side-nav" id="mobile-demo">
 					<li><a class="blue-text" href="#">Nosotros</a></li>
 					<li><a class="blue-text" href="#">Que hacemos</a></li>
 					<li><a class="blue-text" href="#">Eventos</a></li>
 					<li><a class="blue-text" href="#">Historia</a></li>
-					<li><a class="blue-text" href="#">Donar</a></li>
+				
 				  </ul>
 				</div>
 			</nav>
@@ -63,24 +63,24 @@
 	{% endblock %}
     {% block body %}
 	<div id="nav-page-wrapper" class="side-nav fixed edited valign-wrapper transparent z-depth-0 sobre-slider table-of-contents hide-on-small-only">
-		<ul class="valign">
-		  <li class="valign center-align">
-			<a href="#about" class="btn-floating-edited circle blue lighten-5">
+		<ul class="valign" id="tam">
+		  <li class="valign center-align" >
+			<a href="#about" class="btn-floating-edited    blue lighten-5">
 				<i class="material-icons">account_box</i>
 			</a>
 		  </li>
 		  <li class="valign center-align">
-			<a href="#blog" class="btn-floating-edited circle blue lighten-5">
+			<a href="#blog" class="btn-floating-edited  blue lighten-5">
 				<i class="material-icons">text_format</i>
 			</a>
 		  </li>
 		  <li class="valign center-align">
-			<a href="#galeria" class="btn-floating-edited circle blue lighten-5">
+			<a href="#galeria" class="btn-floating-edited   blue lighten-5">
 				<i class="material-icons">photo</i>
 			</a>
 		  </li>
 		  <li class="valign center-align">
-			<a href="#interes" class="btn-floating-edited circle blue lighten-5">
+			<a href="#interes" class="btn-floating-edited  blue lighten-5">
 				<i class="material-icons">link</i>
 			</a>
 		  </li>
@@ -143,9 +143,7 @@
 					<img class="circle responsive-img" src="{{ asset('images/locxueNosotros.jpeg') }}">
 				</div>
 				<div class="col s12 center">
-				  <div class="col s3 center">
-					<h1>Conocenos</h1>
-				  </div>
+				 
 				  <div class="col s9 slider slider2 transparent">
 					<ul class="slides transparent">
 					  <li>
@@ -328,19 +326,7 @@
 	  </div>
 
 
-	  <div class="parallax-container valign-wrapper contenido">
-		<div class="section no-pad-bot">
-		  <div class="container">
-			<div class="row center">
-			  <h5 class="header col s12 light white-text">Tu tambien puedes ayudar!!</h5>
-			</div>
-			<div class="row center">
-				  <a href="#" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Donaciones</a>
-				</div>
-		  </div>
-		</div>
-		<div class="parallax"><img src="{{ asset('images/background2.jpg') }}" alt="Unsplashed background img 2"></div>
-	  </div>
+	 
 
 	  <div class=" contenido scrollspy" id="galeria">
 		<div class="section">
@@ -349,13 +335,13 @@
 			<div class="col s12 center">
 			  <h3><i class="mdi-content-send brown-text"></i></h3>
 			  <h4>Galeria</h4>
-			  <div class="col s12 m4 l3">
+			 <div class="col s12 m4 l3">
 			  <div class="card">
 				<div class="card-image waves-effect waves-block waves-light">
-				  <img class="materialboxed responsive-img" data-caption="A picture of some deer and tons of trees" width="100%" height="250px" src="http://th01.deviantart.net/fs70/PRE/i/2013/126/1/e/nature_portrait_by_pw_fotografie-d63tx0n.jpg">
+				  <img class="materialboxed responsive-img" data-caption="A picture of some deer and tons of trees" width="100%" height="250px" src="{{ asset('image/open2.jpg')}}">
 				</div>
 				<div class="card-content">
-				  <span class="card-title activator grey-text text-darken-4">Agiles Mundial 2015<i class="material-icons right">more_vert</i></span>
+				  <span class="card-title activator grey-text text-darken-4">2er Open Agile Fusagasuga<i class="material-icons right">more_vert</i></span>
 				  <p><a href="#">Ir al articulo</a></p>
 				</div>
 				<div class="card-reveal">
@@ -367,10 +353,10 @@
 			  <div class="col s12 m4 l3">
 			  <div class="card">
 				<div class="card-image waves-effect waves-block waves-light">
-				  <img class="materialboxed responsive-img" data-caption="A picture of some deer and tons of trees" width="100%" height="250px" src="http://th01.deviantart.net/fs70/PRE/i/2013/126/1/e/nature_portrait_by_pw_fotografie-d63tx0n.jpg">
+				  <img class="materialboxed responsive-img" data-caption="A picture of some deer and tons of trees" width="100%" height="250px" src="{{ asset('image/open2.jpg')}}">
 				</div>
 				<div class="card-content">
-				  <span class="card-title activator grey-text text-darken-4">Agiles Mundial 2015<i class="material-icons right">more_vert</i></span>
+				  <span class="card-title activator grey-text text-darken-4">2er Open Agile Fusagasuga<i class="material-icons right">more_vert</i></span>
 				  <p><a href="#">Ir al articulo</a></p>
 				</div>
 				<div class="card-reveal">
@@ -379,13 +365,15 @@
 				</div>
 			  </div>
 			</div>
+
+
 			<div class="col s12 m4 l3">
 			  <div class="card">
 				<div class="card-image waves-effect waves-block waves-light">
-				  <img class="materialboxed responsive-img" data-caption="A picture of some deer and tons of trees" width="100%" height="250px" src="http://th01.deviantart.net/fs70/PRE/i/2013/126/1/e/nature_portrait_by_pw_fotografie-d63tx0n.jpg">
+				  <img class="materialboxed responsive-img" data-caption="A picture of some deer and tons of trees" width="100%" height="250px" src="{{ asset('image/open2.jpg')}}">
 				</div>
 				<div class="card-content">
-				  <span class="card-title activator grey-text text-darken-4">1er Open Agile Fusagasuga<i class="material-icons right">more_vert</i></span>
+				  <span class="card-title activator grey-text text-darken-4">2er Open Agile Fusagasuga<i class="material-icons right">more_vert</i></span>
 				  <p><a href="#">Ir al articulo</a></p>
 				</div>
 				<div class="card-reveal">
@@ -394,18 +382,19 @@
 				</div>
 			  </div>
 			</div>
-			<div class="col s12 m4 l3">
+
+        <div class="col s12 m4 l3">
 			  <div class="card">
 				<div class="card-image waves-effect waves-block waves-light">
-				  <img class="materialboxed responsive-img" data-caption="A picture of some deer and tons of trees" width="100%" height="250px" src="http://th01.deviantart.net/fs70/PRE/i/2013/126/1/e/nature_portrait_by_pw_fotografie-d63tx0n.jpg">
+				  <img class="materialboxed responsive-img" data-caption="A picture of some deer and tons of trees" width="100%" height="250px" src="{{ asset('image/open2.jpg')}}">
 				</div>
 				<div class="card-content">
-				  <span class="card-title activator grey-text text-darken-4">1er Open Agile Education Fusagasuga<i class="material-icons right">more_vert</i></span>
+				  <span class="card-title activator grey-text text-darken-4">2er Open Agile Fusagasuga<i class="material-icons right">more_vert</i></span>
 				  <p><a href="#">Ir al articulo</a></p>
 				</div>
 				<div class="card-reveal">
 				  <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-				  <p>Agilismo aplicado a la educacion.</p>
+				  <p>Soy el tercer articulo mas reciente y esta es mi descripcion.</p>
 				</div>
 			  </div>
 			</div>
@@ -426,36 +415,93 @@
 		</div>
 		<div class="parallax"><img src="{{ asset('images/background3.jpg') }}" alt="Unsplashed background img 3"></div>
 	  </div>  
-	 <div class="container contenido scrollspy" id="interes">
-		<div class="section">
 
+
+
+
+	 <div class="container contenido scrollspy" id="interes">
+		<div class="section" >
+             <div class="container">
 		  <div class="row">
 			<div class="col s12 center">
 			  <h3><i class="mdi-content-send brown-text"></i></h3>
 			  <h4>Tambien podria Interesarte:</h4>
-			  <p class="left-align light">Iconos con enlaces a las paginas de interes;</p>
 			</div>
+	
+		 <div class="col s6 l4 valign-wrapper" >
+	<a href="http://www.ceiba.com.co/"><img width="170" height="60" src="{{asset ('image/logo-ceiba.png')}}" class="attachment-responsive-img center xIBM &#8211; HOME wp-post-image" alt="ibm-logo" /></a>
+		  </div><br>
+		  <div class="col s6 l4 valign-wrapper" >
+	<a href="http://www.javiergarzas.com/"><img width="170" height="60" src="{{ asset('image/logo-javiergarzas-fondo-transparente1.gif')}}" class="attachment-responsive-img center xIBM &#8211; HOME wp-post-image" alt="ibm-logo" /></a>
+		  </div><br>
+		  <div class="col s6 l4 valign-wrapper" >
+		<a href="http://www.tecnologiasod.com/"><img width="170" height="60" src="{{ asset('image/headerac21.png')}}" class="attachment-responsive-img center xIBM &#8211; HOME wp-post-image" alt="ibm-logo" /></a>
+		  </div>
+
+  <div class="col s6 l4 valign-wrapper" >
+		<a href="http://www.kleer.la/"><img width="170" height="60" src="{{ asset('image/logo-03.png')}}" class="attachment-responsive-img center xIBM &#8211; HOME wp-post-image" alt="ibm-logo" style="color:black" /></a>
+		  </div>
+
+
+			
 		  </div>
 
 		</div>
 	  </div>  
+  </div>  
+<!--
+<div class="clients-area section-box grey lighten-4">
+      <div class="content-clients-area cf">
+        <div class="row cf valign-wrapper">
+          <div class="col m10 s11">
+          <div class="col m2 s6 cf valign-wrapper">
+          	<img width="120" height="44" src="http://wordpress-cdn.eadbox.com/2015/03/23135408/ibm-logo.png" class="attachment-responsive-img center xIBM &#8211; HOME wp-post-image" alt="ibm-logo" />
+          </div>
+          <div class="col m2 s6 cf valign-wrapper">
+          	<img width="120" height="43" src="http://wordpress-cdn.eadbox.com/2015/03/23135408/abbc-logo.png" class="attachment-responsive-img center xABBC &#8211; HOME wp-post-image" alt="abbc-logo" />
+          </div>
+          <div class="col m2 s6 cf valign-wrapper">
+          	<img width="120" height="51" src="http://wordpress-cdn.eadbox.com/2015/03/23135408/buscape-logo.png" class="attachment-responsive-img center xBuscapé Company &#8211; HOME wp-post-image" alt="buscape-logo" /></div>
+              	<div class="col m2 s6 cf valign-wrapper">
+          		     <img width="120" height="58" src="http://wordpress-cdn.eadbox.com/2015/03/23135408/solera-logo.png" class="attachment-responsive-img center xSolera &#8211; HOME wp-post-image" alt="solera-logo" /></div>
+          		<div class="col m2 s6 cf valign-wrapper">
+          			<img width="120" height="42" src="http://wordpress-cdn.eadbox.com/2015/03/23135408/impacta-logo.png" class="attachment-responsive-img center xImpacta Online &#8211; HOME wp-post-image" alt="impacta-logo" /></div>
+          		<div class="col m2 s6 cf valign-wrapper">
+          			<img width="120" height="52" src="http://wordpress-cdn.eadbox.com/2015/03/23135408/reckitt-logo.png" class="attachment-responsive-img center xReckitt Benckiser &#8211; HOME wp-post-image" alt="reckitt-logo" />
+          		</div>    
+          	</div>        
+          </div>
+        </div>
+      </div>
+    </div>
+
+-->
+
+
+
+
+
     {% endblock %}
 
 {% block footer %}
     <footer class="page-footer blue contenido">
-    <div class="container">
-      <div class="row">
-        <div class="col l4 s12">
-          <h5 class="white-text">Buscanos</h5>
+   
+
+ <div class="container">
+ 	
+ 	   <div class="row">
+   <div class="col l4">
+   	<h5 class="white-text">Buscanos</h5>
           <ul>
             <li class="flow-text white-text">Fusagasugá - Diagonal 18 No. 20-29</li>
           </ul>
-        </div>
-        <div class="col l8 s12">
-          <h5 class="white-text">Siguenos en nuestras redes</h5>
-          <ul>
-		  <div class="col l3 s12">
-            <li class="flow-text">
+
+   </div>
+ <ul>
+      <div class="col s12 l4">
+      	  <h5 class="white-text">Siguenos en nuestras redes</h5>
+      	 <li class="flow-text">
+
 				<a href="#" class="white-text">
 					<div class="btn-floating blue">
 						<i class="small icon icon-twitter"></i>
@@ -469,9 +515,11 @@
 					</div>
 				/locxue</a>
 			</li>
-		  </div>
-		  <div class="col l9 s12">
-		    <li class="flow-text white-text">
+
+      </div>
+      <div class="col s12 l4">
+      	<br>
+      	 <li class="flow-text white-text">
 				<a href="#" class="white-text">
 					<div class="btn-floating red">
 						<i class="small icon icon-youtube"></i>
@@ -485,16 +533,26 @@
 					</div>
 				locxueudec@gmail.com</a>
 			</li>
-          </ul>
-		  </div>
-        </div>
+			<br>
       </div>
+   </ul>
+    </div>
+     </div>
+ </div>
+
+
+
+
     </div>
     <div class="footer-copyright">
       <div class="container">
       Made by <a class="brown-text text-lighten-3">LocXue</a>
       </div>
     </div>
+
+
+
+
   </footer>
 
 {% endblock %}

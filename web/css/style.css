@@ -119,3 +119,28 @@ transition: all 1s;
 -o-transition: all 1s; /* Opera */
 
 }
+}
+.side-nav.fixed{
+ background-color: red;
+}
+.side-nav.fixed a{
+  padding: 0px 10px;
+}
+
+.side-nav.fixed a:hover{
+ background: rgba(0,0,0,0);
+ color: #3a7999;
+ box-shadow: inset 0 0 0 3px #3a7999;
+ border-radius: 100%;padding: 0px 0px;
+}
+#tam li {
+padding: 0px 0px;
+margin-left: 15px;
+}
+
+#tam li a .circle {
+ background-color: red;
+}
+.color-colegas{
+  background-color:#8211;
+}
